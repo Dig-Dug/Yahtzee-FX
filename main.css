@@ -1,0 +1,125 @@
+/* FX CSS style sheet for the main pane and it's child components. */
+.main-pane {
+ 	-fx-background-image: url("back2ck.jpg"); 
+ 	-fx-background-repeat: no-repeat;
+	-fx-background-size: 800 600;
+	-fx-font-family: 'Helvetica', Arial, sans-serif;
+	-fx-padding: 18px;
+	-fx-spacing: 10px;
+}
+
+.image1 {
+	-fx-padding: 80 60 60 60;
+	-fx-spacing: 10px;
+}
+.image5{
+	
+}
+
+.copyright {
+	-fx-font-size: 20;
+	-fx-font-fill: white;
+	-fx-font-weight: bold;
+}
+
+.topPane {
+	-fx-padding: 2px;
+	-fx-spacing: 5px;
+}
+.upper-section {
+	-fx-padding: 1px;
+	-fx-spacing: 10px;
+}
+
+.upper-section {
+	-fx-padding: 3px;
+	-fx-spacing: 20px;
+}
+
+.center-pane {
+	-fx-min-width: 30;
+	-fx-max-width: 4;
+}
+
+.error-output {
+	-fx-text-fill: red;
+	-fx-font-weight: bold;
+}
+
+.dice-pane {
+	-fx-padding: 80 0 0 0;
+	-fx-spacing: 2px;
+}
+
+.dice-pane-button {
+	
+	-fx-min-width: 64px;
+	-fx-max-width: 64px;
+	-fx-min-height: 64px;
+	-fx-max-height: 64px;
+}
+
+ToggleButton.dice-button {
+
+	-fx-background-repeat: no-repeat;
+    -fx-background-position: center;  
+	-fx-background-size: 60 60;
+}
+
+ToggleButton.dice-button-0 {
+	-fx-background-image: url("dice-none.gif");
+}
+
+ToggleButton.dice-button-1 {
+	-fx-background-image: url("dice-one.png");
+}
+
+ToggleButton.dice-button-2 {
+	-fx-background-image: url("dice-two.png");
+}
+
+ToggleButton.dice-button-3 {
+	-fx-background-image: url("dice-three.png");
+}
+
+ToggleButton.dice-button-4 {
+	-fx-background-image: url("dice-four.png");
+}
+
+ToggleButton.dice-button-5 {
+	-fx-background-image: url("dice-five.png");
+}
+
+ToggleButton.dice-button-6 {
+	-fx-background-image: url("dice-six.png");
+}
+
+Button.rollButton {
+	
+}
+
+Label.section-label {
+	-fx-background-color: lightgrey;
+}
+
+.section-output {
+	-fx-font-size: 20;
+	-fx-text-fill: white;
+}
+
+.bottom-section {
+	-fx-font-family: 'Helvetica', Arial, sans-serif;
+	-fx-text-fill: white;
+}
+
+Button.save-button {
+	/*-fx-background-image: url("devil.gif"); */
+}
+
+Button.score-button {
+	-fx-spacing: 50px 5px 5px;
+}
+
+GridPane.scores-pane {
+	
+}

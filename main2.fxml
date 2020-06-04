@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BorderPane>
+
+<!-- imports -->
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+
+<!-- pane composition -->
+<VBox xmlns:fx="http://javafx.com/fxml">
+	<ImageView fitWidth="230" fitHeight="230">
+		<Image url="de/cbw/jav/yahtzee/fx/gameover.png" />
+	</ImageView>
+
+	<ImageView fitWidth="45" fitHeight="45" styleClass="image5">
+		<Image url="de/cbw/jav/yahtzee/fx/devil.gif" />
+	</ImageView>
+
+	<Label styleClass="score-output" />
+	<Label styleClass="score-output" />
+	<Label styleClass="score-output" />
+	<Label styleClass="score-output" />
+<!--  	<Button styleClass="save-button" text="save score">
+		<tooltip><Tooltip text="save score to file" /></tooltip>
+	</Button> -->
+	<Button styleClass="score-button" text="highscore">
+		<tooltip><Tooltip text="shows player´s score" /></tooltip>
+	</Button>
+</VBox>

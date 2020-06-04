@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BorderPane>
+
+<!-- imports -->
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+
+<!-- pane composition -->
+<VBox xmlns:fx="http://javafx.com/fxml" styleClass="main-pane">
+	<HBox styleClass="icon-pane">
+		<TextField text="username" styleClass="alias-input" />
+		<ImageView fitWidth="90" fitHeight="90">
+			<Image url="de/cbw/jav/yahtzee/fx/main.png" />
+		</ImageView>
+	</HBox>
+	
+	<ImageView fitWidth="230" fitHeight="130">
+		<Image url="de/cbw/jav/yahtzee/fx/logo.png" />
+	</ImageView>
+
+	<HBox styleClass="dice-pane">
+		<ToggleButton
+			styleClass="dice-pane-button,dice-button,dice-button-0" />
+		<ToggleButton
+			styleClass="dice-pane-button,dice-button,dice-button-0" />
+		<ToggleButton
+			styleClass="dice-pane-button,dice-button,dice-button-0" />
+		<ToggleButton
+			styleClass="dice-pane-button,dice-button,dice-button-0" />
+		<ToggleButton
+			styleClass="dice-pane-button,dice-button,dice-button-0" />
+		<Button styleClass="dice-pane-button,roll-button" text="roll" />
+	</HBox>
+
+	<HBox styleClass="section-pane">
+		<GridPane styleClass="upper-section" HBox.hgrow="ALWAYS">
+			<ToggleButton styleClass="section-button" text="Aces"
+				GridPane.rowIndex="0" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="count and add only aces" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="0"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Twos"
+				GridPane.rowIndex="1" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="count and add only twos" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="1"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Threes"
+				GridPane.rowIndex="2" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="count and add only threes" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="2"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Fours"
+				GridPane.rowIndex="3" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="count and add only fours" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="3"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Fives"
+				GridPane.rowIndex="4" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="count and add only fives" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="4"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Sixes"
+				GridPane.rowIndex="5" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="count and add only sixes" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="5"
+				GridPane.columnIndex="1" />
+
+			<Label styleClass="section-label" text="Score"
+				GridPane.rowIndex="6" GridPane.columnIndex="0" />
+			<Label styleClass="section-output,score-output"
+				GridPane.rowIndex="6" GridPane.columnIndex="1" />
+
+			<Label styleClass="section-label" text="Bonus"
+				GridPane.rowIndex="7" GridPane.columnIndex="0" />
+			<Label styleClass="section-output,bonus-output"
+				GridPane.rowIndex="7" GridPane.columnIndex="1" />
+
+			<Label styleClass="section-label" text="Section Score"
+				GridPane.rowIndex="8" GridPane.columnIndex="0" />
+			<Label styleClass="section-output,section-score-output"
+				GridPane.rowIndex="8" GridPane.columnIndex="1" />
+		</GridPane>
+
+		<GridPane styleClass="lower-section" HBox.hgrow="ALWAYS">
+			<ToggleButton styleClass="section-button"
+				text="Three Of A Kind" GridPane.rowIndex="0"
+				GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="sum of all dice" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="0"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button"
+				text="Four Of A Kind" GridPane.rowIndex="1" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="sum of all dice" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="1"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button"
+				text="Full house" GridPane.rowIndex="2" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="25" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="2"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button"
+				text="Small Straight" GridPane.rowIndex="3" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="four sequential dice: 30" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="3"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button"
+				text="Large Straight" GridPane.rowIndex="4" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="five sequential dice: 40" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="4"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Yahtzee"
+				GridPane.rowIndex="5" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="five Of A Kind: 50" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="5"
+				GridPane.columnIndex="1" />
+
+			<ToggleButton styleClass="section-button" text="Chance"
+				GridPane.rowIndex="6" GridPane.columnIndex="0">
+				<tooltip>
+					<Tooltip text="sum of all dice" />
+				</tooltip>
+			</ToggleButton>
+			<Label styleClass="section-output" GridPane.rowIndex="6"
+				GridPane.columnIndex="1" />
+
+			<Label styleClass="section-label" text="Section Score"
+				GridPane.rowIndex="7" GridPane.columnIndex="0" />
+			<Label styleClass="section-output,section-score-output"
+				GridPane.rowIndex="7" GridPane.columnIndex="1" />
+
+			<Label styleClass="section-label" text="Total Score"
+				GridPane.rowIndex="8" GridPane.columnIndex="0" />
+			<Label styleClass="section-output,total-score-output"
+				GridPane.rowIndex="8" GridPane.columnIndex="1" />
+		</GridPane>
+	</HBox>
+</VBox>
